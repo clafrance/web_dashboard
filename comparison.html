@@ -17,7 +17,7 @@
     <div class="container">
       <a class="title" id="pageTitle" href="index.html">Latitude</a>
 
-      <div class="nav myNavBar">
+       <div class="nav myNavBar">
         <span class="dropdown"><a class="dropdown-toggle navItem" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu nestedItem">
             <li><a href="#"><span>Max Temperature</span></a></li>
@@ -33,29 +33,38 @@
     </div>
   </nav>
 
+
+
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <div class="left">
+        <div class="col-md-12">
+          <div class="main">
             <p class="title title1">
-              <span>Summary: Latitude vs. X</span>
+              <span>Comparison: Latitude vs. X</span>
             </p>
-            <img src="assets/images/Fig1.png" alt="City Latitude vs. Max Temperature(01/05/17)" height="210" width="210">
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysism we first pulled data from the OpenWeatherMap API to assoemble a dataset on over 500 cities.</p><br>
 
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included. Factors we looked ar included: temoerature, cloudiness, wind speed, and humidity. This site provides the sourse data and visualizations created as part of the analysis, as well as explanations and describtions and descriptions of any trend and correlations witnessed.</p>
-          </div>
-        </div>
+            <div class="row">
+              <div class="col-md-12 addMargin">Click any plot to get an in-depth analysis</div>
+              <div class="col-md-6 center">
+                <p class="title3">vs. Max Temperature</p>
+                <img src="assets/images/Fig1.png" alt="City Latitude vs. Max Temperature(01/05/17)" height="350" width="450">
+              </div>
 
-        <div class="col-md-4">
-          <div class="right">
-            <p class="title title2"><span>Visualizations</span></p>
-            <div>
-              <img src="assets/images/Fig1.png" alt="City Latitude vs. Max Temperature(01/05/17)" height="140" width="140">
-              <img src="assets/images/Fig2.png" alt="City Latitude vs. Max Huminity(01/05/17)" height="140" width="140">
-              <img src="assets/images/Fig3.png" alt="City Latitude vs. Max Cloudiness(01/05/17)" height="140" width="140">
-              <img src="assets/images/Fig4.png" alt="City Latitude vs. Max Wind Speed(01/05/17)" height="140" width="140">
+              <div class="col-md-6 center">
+                <p class="title3">vs. Max Humigity</p>
+                <img src="assets/images/Fig2.png" alt="City Latitude vs. Huminity(01/05/17)" height="350" width="450">
+              </div>
+
+              <div class="col-md-6 center">
+                <p class="title3">vs. Cloudiness</p>
+                <img src="assets/images/Fig3.png" alt="City Latitude vs. Cloudiness(01/05/17)" height="350" width="450">
+              </div>
+
+              <div class="col-md-6 center">
+                <p class="title3">vs. Wind Speed</p>
+                <img src="assets/images/Fig4.png" alt="City Latitude vs. Wind Speed(01/05/17)" height="350" width="450">
+              </div>
             </div>
           </div>
         </div>
