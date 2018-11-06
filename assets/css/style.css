@@ -10,7 +10,7 @@ body {
 p {line-height: 2.2em;}
 
 .title {
-
+	 font-family: 'Times New Roman', serif
 }
 
 /******* Nav ********/
@@ -80,39 +80,48 @@ section {
 }
 
 .rightImg {
+	display: inline-block;
 	height: 145px;
 	width: 145px;
 }
 
-/*.graphes img {
+.graphes img {
 		display: block;
-		width: 500px;
+		width: 550px;
 		height: auto;
-		border: 1px solid red;
-}*/
+}
+
+img.largeImg {
+	width: 700px;
+	height: auto;
+	margin-bottom: 30px;
+}
 
 @media (max-width: 1600px) {
-
 	.graphes img {
 		display: block;
 		width: 550px;
 		height: auto;
-		border: 1px solid red;
+	}
+
+	img.largeImg {
+		display: block;
+		width: 700px;
+		height: auto;
 	}
 }
 
 @media (max-width: 1300px) {
-
 	.graphes img {
 		display: block;
 		width: 500px;
 		height: auto;
-		border: 1px solid red;
 	}
 }
 
 @media (max-width: 1200px) {
 	.rightImg {
+		display: inline-block;
 		height: 115px;
 		width: 115px;
 	}
@@ -121,12 +130,18 @@ section {
 		display: block;
 		width: 450px;
 		height: auto;
-		border: 1px solid res;
+	}
+
+	img.largeImg {
+		display: block;
+		width: 550px;
+		height: auto;
 	}
 }
 
 @media (max-width: 990px) {
 	.rightImg {
+		display: inline-block;
 		height: 150px;
 		width: 150px;
 	}
@@ -135,38 +150,86 @@ section {
 		display: inline-block;
 		width: 600px;
 		height: auto;
-		border: 1px solid res;
+	}
+
+	img.largeImg {
+		display: block;
+		width: 650px;
+		height: auto;
 	}
 }
+
+
+@media (max-width: 800px) {
+	.rightImg {
+		display: inline-block;
+		height: 140px;
+		width: 140px;
+	}
+
+	img.largeImg {
+		display: block;
+		width: 650px;
+		height: auto;
+	}
+}
+
+@media (max-width: 720px) {
+
+	img.largeImg {
+		display: block;
+		width: 600px;
+		height: auto;
+	}
+}
+
 
 @media (max-width: 600px) {
-
-	.graphes img {
+	.rightImg {
 		display: inline-block;
+		height: 100px;
+		width: 100px;
+	}
+	.graphes img {
+		display: block;
+		width: 400px;
+		height: auto;
+	}
+
+	img.largeImg {
+		display: block;
 		width: 500px;
 		height: auto;
-		border: 1px solid res;
 	}
 }
 
+@media (max-width: 500px) {
+
+	.graphes img {
+		display: block;
+		width: 300px;
+		height: auto;
+	}
+
+	img.largeImg {
+		display: block;
+		width: 400px;
+		height: auto;
+	}
+}
 
 @media (max-width: 400px) {
 
 	.graphes img {
-		display: inline-block;
+		display: block;
 		width: 400px;
 		height: auto;
-		border: 1px solid res;
 	}
-}
 
-@media (max-width: 600px) {
-
-	.graphes img {
-		display: inline-block;
-		width: 400px;
+	img.largeImg {
+		display: block;
+		width: 300px;
 		height: auto;
-		border: 1px solid res;
 	}
 }
 
@@ -219,17 +282,14 @@ footer p {
 .main {
 	background-color: #fff;
 	padding: 30px;
-/*	border: 1px solid red;*/
 }
 
 .title3 {
 	margin-top: -10px;
-/*	border: 1px solid red;*/
 }
 
 .graphes {
 	margin-top: 50px;
-/*	border: 1px solid red;*/
 }
 
 .graphes p {
@@ -243,13 +303,24 @@ footer p {
 	margin-bottom: 30px;
 }
 
-
 .center {
 	text-align: center;
 }
 
+#temp, #humidity, #cloudiness, #wind_speed {
+	border: 2px solid #4daaa5;
+}
 
+.myTable {
+	overflow: scroll;
+}
 
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+ table th, table td { overflow: hidden; }
 
 
 
