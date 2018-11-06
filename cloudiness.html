@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bashboard | Comparison</title>
+  <title>Bashboard | Plots-Cloudiness</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,18 +12,17 @@
 </head>
 
 <body>
-
   <nav>
     <div class="container">
       <a class="title" id="pageTitle" href="index.html">Latitude</a>
 
-       <div class="nav myNavBar">
+      <div class="nav myNavBar">
         <span class="dropdown"><a class="dropdown-toggle navItem" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu nestedItem">
             <li><a href="max_temperature.html"><span>Max Temperature</span></a></li>
-            <li><a href="numidity.html"><span>Humidity</span></a></li>
+            <li><a href="humidity.html"><span>Humidity</span></a></li>
             <li><a href="cloudiness.html"><span>Cloudiness</span></a></li>
-            <li><a href="wind_apeed.html"><span>Wind Speed</span></a></li>
+            <li><a href="wind_speed.html"><span>Wind Speed</span></a></li>
           </ul>          
         </span>
         <span><a class="navItem" href="comparison.html">Comparison</a></span>
@@ -33,46 +32,32 @@
     </div>
   </nav>
 
-
-
   <section>
-    
     <div class="container">
-      <div class="main">
+      <div class="row">
 
-        <div class="row">
-          <div class="col-md-12">
+        <div class="col-md-8">
+          <div class="left">
             <p class="title title1">
-              <span>Comparison: Latitude vs. X</span>
+              <span>Cloudiness</span>
             </p>
-
-            <p class="title title3">
-              <span>Click any plot to get an in-depth analysis</span>
-            </p>
+            <img class="largeImg" src="assets/images/Fig3.png" alt="City Latitude vs. Cloudiness(01/05/17)">
+            <p>Tincidunt nisl sollicitudin ligula nec praesent vehicula justo congue, dolor pulvinar massa felis porttitor eget suscipit, malesuada fames luctus dui sagittis vitae aptent diam pretium suspendisse diam cubilia lacus ultrices ad malesuada.</p><br>
           </div>
         </div>
 
-        <div class="row graphes">
-          <div class="col-md-6 center">
-            <p class="title">vs. Max Temperature</p>
-            <a href="max_temperature.html"><img src="assets/images/Fig1.png" alt="City Latitude vs. Max Temperature(01/05/17)"></a>
-          </div>
-
-          <div class="col-md-6 center">
-            <p class="title">vs. Max Humigity</p>
-            <a href="humidity.html"><img src="assets/images/Fig2.png" alt="City Latitude vs. Huminity(01/05/17)"></a>
-          </div>
-
-          <div class="col-md-6 center">
-            <p class="title">vs. Cloudiness</p>
-            <a href="cloudiness.html"><img src="assets/images/Fig3.png" alt="City Latitude vs. Cloudiness(01/05/17)"></a>
-          </div>
-
-          <div class="col-md-6 center">
-            <p class="title">vs. Wind Speed</p>
-            <a href="wind_speed.html"><img src="assets/images/Fig4.png" alt="City Latitude vs. Wind Speed(01/05/17)"></a>
+        <div class="col-md-4">
+          <div class="right">
+            <p class="title title2"><span>Visualizations</span></p>
+            <div>
+              <a href="max_temperature.html"><img src="assets/images/Fig1.png" alt="City Latitude vs. Max Temperature(01/05/17)" class="rightImg"></a>
+              <a href="humidity.html"><img src="assets/images/Fig2.png" alt="City Latitude vs. Max Humidity(01/05/17)" class="rightImg"></a>
+              <a href="cloudiness.html"><img src="assets/images/Fig3.png" alt="City Latitude vs. Max Cloudiness(01/05/17)" class="rightImg"  id="cloudiness"></a>
+              <a href="wind_speed.html"><img src="assets/images/Fig4.png" alt="City Latitude vs. Max Wind Speed(01/05/17)" class="rightImg"></a>
+            </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
