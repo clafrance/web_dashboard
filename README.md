@@ -1,2 +1,2 @@
 ### Weather analysis visualization dashboard
-URL: <https://github.com/clafrance/web_dashboard>
+URL: <https://clafrance.github.io/web_dashboard/index.html>
